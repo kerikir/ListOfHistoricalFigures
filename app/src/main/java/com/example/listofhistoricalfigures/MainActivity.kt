@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity()
 {
+    // Нельзя использовать val и var
     lateinit var observerLifecycle: MyObserverLifecycle
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity()
         }
 
         observerLifecycle = MyObserverLifecycle()
+        // Подписка на события жизненного цикла
         lifecycle.addObserver(observerLifecycle)
     }
 }
