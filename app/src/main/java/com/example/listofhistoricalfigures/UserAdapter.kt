@@ -26,9 +26,10 @@ internal class UserAdapter: RecyclerView.Adapter<UserAdapter.UserHolder>()
     }
 
 
+    /** Отображаемые пользователи */
     private var users: List<User> = ArrayList<User>()
 
-    // Создаем View Holder и инициализирум View для списка
+    // Создаем View Holder когда это необходимо
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder
     {
         return UserHolder(LayoutInflater.from(parent.context)
