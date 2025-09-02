@@ -12,6 +12,7 @@ class MyObserverLifecycle : LifecycleObserver
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
     fun loggingLifecycle(source: LifecycleOwner, event: Lifecycle.Event)
     {
+        // Логирование для отладки
         Log.d("TAG", event.toString())
     }
 }
