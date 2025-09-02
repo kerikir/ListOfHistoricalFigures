@@ -8,6 +8,7 @@ import androidx.lifecycle.OnLifecycleEvent
 
 class MyObserverLifecycle : LifecycleObserver
 {
+    /** Логирование каждого события жизненного цикла */
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
     fun loggingLifecycle(source: LifecycleOwner, event: Lifecycle.Event)
     {
