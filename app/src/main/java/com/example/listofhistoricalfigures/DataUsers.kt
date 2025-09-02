@@ -2,6 +2,7 @@ package com.example.listofhistoricalfigures
 
 internal object DataUsers
 {
+    /** Начальный список данных */
     fun getUsers() = listOf(
         User("Marilyn Monroe", "American actress, singer, model"),
         User("Abraham Lincoln", "US President during American civil war"),
@@ -10,6 +11,7 @@ internal object DataUsers
     )
 
 
+    /** Список при загрузке данных по кнопке */
     fun getAnotherUsers() = listOf(
         User("Queen Elizabeth", "British monarch since 1954"),
         User("Winston Churchill", "British Prime Minister during WWII"),
