@@ -45,6 +45,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.android.support:recyclerview-v7:28.0.0")
-    implementation("android.arch.lifecycle:extensions:1.1.1")
+    implementation(libs.recyclerview.v7)
+    implementation(libs.extensionsLifecycle)
 }
