@@ -1,7 +1,7 @@
 package com.example.listofhistoricalfigures
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
 
 // Получение данных из списка
@@ -17,7 +17,7 @@ internal class UserViewModel : ViewModel()
     }
 
     /** Возврат списка пользователей */
-    fun getListUser() : MutableLiveData<List<User>> = userList
+    fun getListUsers() : MutableLiveData<List<User>> = userList
 
     // Получение полного списка пользователей
     fun updateListUsers()
