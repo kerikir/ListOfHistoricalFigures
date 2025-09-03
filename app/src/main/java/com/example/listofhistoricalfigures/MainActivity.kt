@@ -39,7 +39,8 @@ internal class MainActivity : AppCompatActivity()
         userList.adapter = adapter
 
         // Подписываем адаптер на изменение списка
-        userViewModel.getListUsers().observe(this, Observer {
+        userViewModel.getListUsers().observe(this, Observer
+        {
             it.let {
                 adapter.refreshUsers(it)
             }
@@ -53,6 +54,7 @@ internal class MainActivity : AppCompatActivity()
         menuInflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
 
     // Обработчик нажатий на меню
     override fun onOptionsItemSelected(item: MenuItem): Boolean
