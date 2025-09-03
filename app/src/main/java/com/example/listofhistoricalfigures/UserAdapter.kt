@@ -11,6 +11,7 @@ import android.widget.TextView
 internal class UserAdapter: RecyclerView.Adapter<UserAdapter.UserHolder>()
 {
     // Описание элементов и привязка к Recycle View
+    /** Предоставляет доступ к View элементам */
     class UserHolder(itemView: View): RecyclerView.ViewHolder(itemView)
     {
         // Scope-function
@@ -30,6 +31,7 @@ internal class UserAdapter: RecyclerView.Adapter<UserAdapter.UserHolder>()
     private var users: List<User> = ArrayList<User>()
 
     // Создаем View Holder когда это необходимо
+    // Создает View Holder и инициализирует View компоненты для списка
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder
     {
         return UserHolder(LayoutInflater.from(parent.context)
