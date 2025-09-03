@@ -5,5 +5,8 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.ListOfHistoricalFigures" parent="Base.Theme.ListOfHistoricalFigures" />
+    <style name="Theme.ListOfHistoricalFigures" parent="AppTheme" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
 </resources>
