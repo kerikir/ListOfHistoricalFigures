@@ -4,5 +4,5 @@
 <br/>
 Для логирования используется класс Log.
 <br/>
-Для передачи состояния Activity используется Android Jetpack (View Model).
+Для передачи состояния Activity используется Android Jetpack (View Model, LiveData).
 <br/>
